@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #042104;
+}
+
+.loader {
+  position: relative;
+}
+
+.loader span {
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.loader span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: #00ff0a;
+  border-radius: 50%;
+}
